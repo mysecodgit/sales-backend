@@ -13,6 +13,7 @@ import authRoutes from "./routes/authRoutes.js";
 import vendorRoutes from "./routes/vendorRoutes.js";
 import customerRoutes from "./routes/customerRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import accountRoutes from "./routes/accountRoutes.js";
 
 // Initializing the app
 const app = express();
@@ -48,6 +49,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/vendors", vendorRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/accounts", accountRoutes);
 
 // Global error handler
 app.use((err, req, res, next) => {
